@@ -1,40 +1,13 @@
-<h1>
+<!-- <h1>
   <a href="#"><img alt="MuJoCo Menagerie" src="assets/banner.png" width="100%"></a>
-</h1>
+</h1> -->
+# MuJoCo Menagerie
 
-<p>
-  <a href="https://github.com/google-deepmind/mujoco_menagerie/actions/workflows/build.yml?query=branch%3Amain" alt="GitHub Actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/google-deepmind/mujoco_menagerie/build.yml?branch=main">
-  </a>
-  <a href="https://mujoco.readthedocs.io/en/latest/models.html" alt="Documentation">
-    <img src="https://readthedocs.org/projects/mujoco/badge/?version=latest">
-  </a>
-  <a href="https://github.com/google-deepmind/mujoco_menagerie/blob/main/CONTRIBUTING.md">
-    <img src="https://img.shields.io/badge/PRs-welcome-green.svg" alt="PRs" height="20">
-  </a>
-</p>
+> This Repository is used for 263C Project, study only.
 
 **Menagerie** is a collection of high-quality models for the
 [MuJoCo](https://github.com/google-deepmind/mujoco) physics engine, curated by
 Google DeepMind.
-
-A physics simulator is only as good as the model it is simulating, and in a
-powerful simulator like MuJoCo with many modeling options, it is easy to create
-"bad" models which do not behave as expected. The goal of this collection is to
-provide the community with a curated library of well-designed models that work
-well right out of the gate.
-
-### Gallery
-
-|<img src="assets/franka_fr3-fr3.png" width=100>|<img src="assets/kinova_gen3-gen3.png" width=100>|<img src="assets/kuka_iiwa_14-iiwa14.png" width=100>|<img src="assets/ufactory_lite6-lite6.png" width=100>|<img src="assets/franka_emika_panda-panda.png" width=100>|
-| :---: | :---: | :---: | :---: | :---: |
-|<img src="assets/agilex_piper-piper.png" width=100>|<img src="assets/rethink_robotics_sawyer-sawyer.png" width=100>|<img src="assets/universal_robots_ur10e-ur10e.png" width=100>|<img src="assets/universal_robots_ur5e-ur5e.png" width=100>|<img src="assets/trossen_vx300s-vx300s.png" width=100>|
-|<img src="assets/ufactory_xarm7-xarm7.png" width=100>|<img src="assets/unitree_z1-z1.png" width=100>|<img src="assets/aloha-aloha.png" width=100>|<img src="assets/robotiq_2f85-2f85.png" width=100>|<img src="assets/franka_emika_panda-hand.png" width=100>|
-|<img src="assets/ufactory_xarm7-hand.png" width=100>|<img src="assets/wonik_allegro-left_hand.png" width=100>|<img src="assets/shadow_hand-left_hand.png" width=100>|<img src="assets/leap_hand-left_hand.png" width=100>|<img src="assets/shadow_dexee-shadow_dexee.png" width=100>|
-|<img src="assets/google_robot-robot.png" width=100>|<img src="assets/unitree_a1-a1.png" width=100>|<img src="assets/anybotics_anymal_b-anymal_b.png" width=100>|<img src="assets/anybotics_anymal_c-anymal_c.png" width=100>|<img src="assets/google_barkour_v0-barkour_v0.png" width=100>|
-|<img src="assets/google_barkour_vb-barkour_vb.png" width=100>|<img src="assets/unitree_go1-go1.png" width=100>|<img src="assets/unitree_go2-go2.png" width=100>|<img src="assets/boston_dynamics_spot-spot_arm.png" width=100>|<img src="assets/agility_cassie-cassie.png" width=100>|
-|<img src="assets/unitree_g1-g1.png" width=100>|<img src="assets/unitree_h1-h1.png" width=100>|<img src="assets/robotis_op3-op3.png" width=100>|<img src="assets/booster_t1-t1.png" width=100>|<img src="assets/pal_talos-talos.png" width=100>|
-|<img src="assets/bitcraze_crazyflie_2-cf2.png" width=100>|<img src="assets/skydio_x2-x2.png" width=100>|<img src="assets/flybody-fruitfly.png" width=100>|<img src="assets/realsense_d435i-d435i.png" width=100>||
 
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -42,7 +15,7 @@ well right out of the gate.
   - [Usage](#usage)
     - [Via `robot-descriptions`](#via-robot-descriptions)
     - [Via `git clone`](#via-git-clone)
-- [Model Quality and Contributing](#model-quality-and-contributing)
+
 - [Menagerie Models](#menagerie-models)
 - [Citing Menagerie](#citing-menagerie)
 - [Acknowledgments](#acknowledgments)
@@ -141,31 +114,6 @@ python -m mujoco.viewer --mjcf mujoco_menagerie/unitree_go2/scene.xml
 
 If you have further questions, please check out our [FAQ](FAQ.md).
 
-## Model Quality and Contributing
-
-Our goal is to eventually make all Menagerie models as faithful as possible to
-the real system they are being modeled after. Improving model quality is an
-ongoing effort, and the current state of many models is not necessarily
-as good as it could be.
-
-However, by releasing Menagerie in its current state, we hope to consolidate
-and increase visibility for community contributions. To help Menagerie users
-set proper expectations around the quality of each model, we introduce the
-following grading system:
-
-| Grade | Description                                                 |
-|-------|-------------------------------------------------------------|
-| A+    | Values are the product of proper system identification      |
-| A     | Values are realistic, but have not been properly identified |
-| B     | Stable, but some values are unrealistic                     |
-| C     | Conditionally stable, can be significantly improved         |
-
-The grading system will be applied to each model once a proper system
-identification toolbox is created. We are currently planning to release
-this toolbox later this year.
-
-For more information regarding contributions, for example to add a new model to
-Menagerie, see [CONTRIBUTING](CONTRIBUTING.md).
 
 ## Menagerie Models
 
