@@ -1,0 +1,1 @@
+把Car_Door.obj文件复制进assets文件夹，运行tutorial_ur10e copy即可
