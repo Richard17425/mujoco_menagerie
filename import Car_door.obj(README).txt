@@ -1,1 +1,1 @@
-把Car_Door.obj文件复制进assets文件夹，运行tutorial_ur10e copy即可
+把Car_Door.obj文件复制进assets文件夹，运行tutorial_ur10e copy即可，如果连续运行出现全黑的image，点击上方的restart再运行一次
