@@ -1,3 +1,6 @@
+'''
+纯关节空间pid控制, 一个简单的demo
+'''
 import mujoco_viewer
 import numpy as np
 # matplotlib.use('TkAgg')

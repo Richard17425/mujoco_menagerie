@@ -120,9 +120,9 @@
                   <joint name="wrist_3_joint" class="size2"/>
                   <geom material="linkgray" mesh="wrist3" class="visual"/>
                   <geom class="eef_collision" pos="0 0.097 0" quat="1 1 0 0" size="0.046 0.02"/>
-                  <site name="attachment_site" pos="0 0.1 0" quat="-1 1 0 0"/>
-                  <geom name="eef_tip" type="sphere" size="0.005"
-                        pos="0 0.1 0" rgba="0 0 1 1" contype="1" conaffinity="1" group="3"/>
+                  <site name="attachment_site" pos="0 0.1 0" size="0.01" group="0" rgba="0 0 1 0.8"/>
+                  <geom name="eef_tip" type="cylinder" size="0.08 0.015" axisangle="1 0 0 1.5708"
+                        pos="0 0.12 0" rgba="0 0 1 1" contype="1" conaffinity="1" group="0"/>
                 </body>
               </body>
             </body>

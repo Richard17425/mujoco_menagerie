@@ -1,3 +1,8 @@
+'''
+Impedance control 维持静态位姿的一个测试代码。可以在窗口里双击选择机械臂关节 然后ctrl+左键拖动机械臂移动
+控制器会保证机械臂偏离desire pose之后回到原位
+仿真过程的output在img文件夹里, torque代表的是actuator input
+'''
 import mujoco
 import numpy as np
 import matplotlib
